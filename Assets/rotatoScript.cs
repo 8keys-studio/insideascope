@@ -4,8 +4,8 @@ using System.Collections;
 public class rotatoScript : MonoBehaviour {
 	public float speed = 1.0F;
 	public float scale = 1.0F;
-	private float scaleMin = 10.0F;
-	private float scaleMax = 250.0F;
+	private float scaleMin = 15.0F;
+	private float scaleMax = 30.0F;
 
 	void LateUpdate (){
 		transform.RotateAround(transform.position, Vector3.up, (0.2F + Input.acceleration.x) * speed);
