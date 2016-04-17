@@ -3,7 +3,14 @@ using System.Collections;
 
 public class rotatoScript : MonoBehaviour {
 
+	public float speed = 5f;
+	public GameObject gemParent;
+	private Vector3 rotationDirection;
+
 	void Update (){
-		transform.Rotate(Vector3.right * Time.deltaTime);
+		 rotationDirection = new Vector3(0, 1, 0);
+		 gemParent = gemParent.transform.parent;
+		 gemParent.transform.Rotate((rotationDirection * Time.deltaTime * speed));
+	
 	}
 }
