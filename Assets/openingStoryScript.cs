@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class openingStoryScript : MonoBehaviour {
 
-// on start, disable player controls
-//shows canvas and plays voiceover
-// after timer, thisobject disables and player controls fully enabled
+	// on start, disable player controls
+	//shows canvas and plays voiceover
+	// after timer, thisobject disables and player controls fully enabled
 
 	private GameObject playerObject;
 	private float timer;
