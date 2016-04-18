@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnterLoveTower : MonoBehaviour {
+public class EnterHateTower2 : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
@@ -18,7 +18,7 @@ public class EnterLoveTower : MonoBehaviour {
         float fadeTime = GameObject.Find("fadeInOut").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         Debug.Log("Places");
-        Application.LoadLevel("gem1"); //make a win message
-        //gem1
+        Application.LoadLevel("gem2"); //make a win message
+        //gem2
     }
 }
