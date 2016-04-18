@@ -17,7 +17,7 @@ public class openingStoryScript : MonoBehaviour {
 	}
 
 	void Update() {
-		Debug.Log ("timer =" + timer);
+		// Debug.Log ("timer =" + timer);
 		//start timer
 
 		//disable playerObject

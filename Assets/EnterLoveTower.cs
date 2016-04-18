@@ -5,7 +5,7 @@ public class EnterLoveTower : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "MainCamera")
         {
             Debug.Log("Trigger Level Change");
             StartCoroutine(ChangeLevel());

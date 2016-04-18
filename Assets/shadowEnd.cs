@@ -4,7 +4,7 @@ using System.Collections;
 public class shadowEnd : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
-		if (other.tag == "Player") {
+		if (other.tag == "MainCamera") {
 			Debug.Log ("heart collided");
 			Application.LoadLevel ("BadEndShadow");
 		}
