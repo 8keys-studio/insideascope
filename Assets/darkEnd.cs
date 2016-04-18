@@ -5,6 +5,7 @@ public class darkEnd : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
+			Debug.Log ("heart collided");
 			Application.LoadLevel ("BadEndDark");
 		}
 	
