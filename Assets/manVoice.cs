@@ -11,6 +11,10 @@ public class manVoice : MonoBehaviour {
 		if (other.tag == "Player" && !alreadyPlayed) {
 			AudioSource.PlayClipAtPoint (clip, transform.position);
 			alreadyPlayed = true;
+			Rigidbody rb = GetComponent<Rigidbody>();
+			Vector3 randomDirection = new Vector3(Random.value, 5.0F, Random.value);
+			rb.AddRelativeTorque(randomDirection);
+			rb.velocity = randomDirection;
 		}
 	}
 }
