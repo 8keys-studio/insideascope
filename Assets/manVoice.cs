@@ -7,6 +7,8 @@ public class manVoice : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider other) {
+
+		if (other.tag == "Player"){
 		
 		AudioSource.PlayClipAtPoint(clip, transform.position);
 
