@@ -18,3 +18,4 @@ public class manVoice : MonoBehaviour {
 		}
 	}
 }
+
