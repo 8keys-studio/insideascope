@@ -3,16 +3,18 @@ using System.Collections;
 
 public class openingStoryScript : MonoBehaviour {
 	private float timer;
-	public GameObject nextCameraObject;
+	private bool introCompleted = false;
 	public float timerLength;
 
 	void Update() {
-		if (timer < timerLength) {
-			timer += Time.time;
-		} else {
-			gameObject.SetActive(false);
-			nextCameraObject.SetActive(true);
+		if (!introCompleted) {
+			if (timer < timerLength) {
+				timer += Time.time;
+			} else {
+				Autowalk autowalk = GetComponent<Autowalk> ();
+				autowalk.enabled = true;
+				introCompleted = true;
+			}
 		}
 	}
-
 }
