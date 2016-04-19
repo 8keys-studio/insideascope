@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class EnterLoveTower : MonoBehaviour {
 
@@ -18,7 +19,6 @@ public class EnterLoveTower : MonoBehaviour {
         float fadeTime = GameObject.Find("fadeInOut").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         Debug.Log("Places");
-        Application.LoadLevel("gem1"); //make a win message
-        //gem1
+		SceneManager.LoadScene("gem1"); //make a win message
     }
 }
