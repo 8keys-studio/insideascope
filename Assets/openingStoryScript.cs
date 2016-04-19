@@ -10,8 +10,8 @@ public class openingStoryScript : MonoBehaviour {
 		if (timer < timerLength) {
 			timer += Time.time;
 		} else {
-			nextCameraObject.SetActive(true);
 			gameObject.SetActive(false);
+			nextCameraObject.SetActive(true);
 		}
 	}
 
