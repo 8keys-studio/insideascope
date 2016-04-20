@@ -227,6 +227,17 @@ public class OVRPlayerController : MonoBehaviour
 		bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 		bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
+		#if UNITY_ANDROID
+		if (GearVRInput.GetAxisX > 0.1f)
+		{
+		moveForward = true;
+		}
+		if (GearVRInput.GetAxisX < -0.1f)
+		{
+		moveBack = true;
+		}
+		#endif
+
 		bool dpad_move = false;
 
 		if (OVRInput.Get(OVRInput.Button.DpadUp))
