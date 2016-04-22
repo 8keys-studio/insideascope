@@ -31,7 +31,7 @@ public class OVRPlayerController : MonoBehaviour
 	/// <summary>
 	/// The rate acceleration during movement.
 	/// </summary>
-	public float Acceleration = 0.1f;
+	public float Acceleration = 0.5f;
 
 	/// <summary>
 	/// The rate of damping on movement.
@@ -226,6 +226,17 @@ public class OVRPlayerController : MonoBehaviour
 		bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 		bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 		bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
+
+		#if UNITY_ANDROID
+		if (GearVRInput.GetAxisX > 0.1f)
+		{
+			moveForward = true;
+		}
+		if (GearVRInput.GetAxisX < -0.1f)
+		{
+			moveBack = true;
+		}
+		#endif
 
 		bool dpad_move = false;
 

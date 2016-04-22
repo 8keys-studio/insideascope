@@ -27,3 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SaveState_Sample.unity
   - enabled: 1
     path: Assets/obelisk.unity
+  - enabled: 1
+    path: Assets/gem1.unity
+  - enabled: 1
+    path: Assets/gem2.unity
+  - enabled: 1
+    path: Assets/gem3.unity
+  - enabled: 1
+    path: Assets/GoodEnd.unity
+  - enabled: 1
+    path: Assets/BadEndShadow.unity
+  - enabled: 1
+    path: Assets/BadEndDark.unity

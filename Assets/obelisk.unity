@@ -1945,7 +1945,7 @@ MonoBehaviour:
   JumpForce: 0.3
   RotationAmount: 1.5
   RotationRatchet: 45
-  HmdResetsY: 1
+  HmdResetsY: 0
   HmdRotatesY: 1
   GravityModifier: 1
   useProfileData: 1
