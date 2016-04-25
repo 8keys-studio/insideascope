@@ -99,7 +99,7 @@ PlayerSettings:
   productGUID: 70a4850d885a449d5bebe13f318b89e5
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
-  AndroidPreferredInstallLocation: 2
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   apiCompatibilityLevel: 2
   stripEngineCode: 1
@@ -158,8 +158,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: 8keys.keystore
+  AndroidKeyaliasName: 8 keys
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1
